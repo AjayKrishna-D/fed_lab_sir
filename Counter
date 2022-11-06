@@ -1,0 +1,14 @@
+import React,{useEffect, useState} from 'react' function UseEffectHook(){
+const[count,setcount]=useState(0) const[flag,setflag]=useState('true') const handleflag=()=>{
+if(flag=='true') setflag('false')
+else
+setflag('true')
+}
+useEffect (()=>{setcount(count+1)},[flag]) return(
+<div>
+<button onClick={handleflag}>flag:{flag}</button>
+<p>flag change {count} no of times</p>
+</div>
+);
+}
+export default UseEffectHook
