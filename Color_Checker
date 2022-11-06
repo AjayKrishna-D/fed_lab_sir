@@ -1,0 +1,17 @@
+<html><head><style>
+.container{
+display: grid;
+grid-template-columns: repeat(6,25px);
+grid-template-rows: repeat(5,25px);
+grid-gap : 2px; }
+.a1{
+background-color: rgb(244, 105, 13); 
+}
+.a2{
+background-color: rgb(242, 174, 128); 
+}
+.a3{
+background-color: rgb(127, 82, 51); 
+}
+</style> <title>CSS Grid</title>
+</head>
