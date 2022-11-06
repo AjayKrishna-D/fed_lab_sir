@@ -1,0 +1,19 @@
+<html>
+<body>
+<h1>this is an example of drag and drop</h1>
+<div style="height:200;width:250;border:solid 1px red" ondragover="allowdrop(event)" ondrop="drop(event)"></div>
+<br><br>
+<img src="main.jpeg"
+width="250" height="180" alt="image" draggable="true"
+ondragstart="drag(event)" id="img"/>
+<script>
+function drag(event){ event.dataTransfer.setData("text",event.target.id)
+}
+function allowdrop(event){ event.preventDefault()
+}
+function drop(event){ event.preventDefault()
+var data=event.dataTransfer.getData("text") event.target.appendChild(document.getElementById(data))
+}
+</script>
+</body>
+</html>
